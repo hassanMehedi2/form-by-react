@@ -9,13 +9,13 @@ const SimpleForm = () => {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            {/* <form onSubmit={handleSubmit}>
                 <input type="text" name="name" />
                 <br />
                 <input type="email" name="email" id="" />
                 <br />
                 <input type="submit" />
-            </form>
+            </form> */}
         </div>
     );
 };
