@@ -15,7 +15,12 @@ const StatefulForm = () => {
         if(password.length<6){
             setError("Password must me over 6 char")
         }
-        console.log(name,email,password);
+        else{            
+            setError("");
+              console.log(name,email,password);
+
+        }
+      
         
     }
 
@@ -53,7 +58,9 @@ const StatefulForm = () => {
 
             </form>
             <div>
-                <p>{error}</p>
+           {
+            error &&  <p>{error}</p>
+           }
             </div>
         </div>
     );
